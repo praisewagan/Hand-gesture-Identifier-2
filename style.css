@@ -1,0 +1,47 @@
+body {
+    background-color: rgba(19, 191, 176, 0.964);
+}
+
+h1 {
+    color: white;
+}
+
+p {
+    color: black;
+}
+
+#heading_of_emojis {
+    background-color: lightblue;
+    width: max-content;
+    border-radius: 12px;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+#camera {
+    border-style: dashed;
+    width: 450px;
+    height: 300px;
+    border-color: black;
+    margin-left:25px;
+
+}
+
+#Snapshot {
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
+    width: 450px;
+    height: 300px;
+    margin-right:25px;
+}
+
+p{
+    color: white;
+    font-size: 25px;
+    padding-top: 10px;
+}
+
+#emoji_confidence{
+    color: white;
+}

@@ -1,0 +1,70 @@
+<html>
+
+<head>
+    <title>Hand gesture to Emoji</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    <script src=" https://unpkg.com/ml5@0.4.3/dist/ml5.min.js "></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div>
+        <center>
+            <div id="heading_of_emojis">
+                <h1>Gesture Wep App
+                    <br>
+                    <span>&#9996;</span>
+                    <span>&#128076;</span>
+                    <span>&#128077;</span>
+                    <span>&#129304;</span>
+                    <span> &#128079;</span>
+                </h1>
+                <br>
+            </div>
+            <h3>Take a selfie to know about it's meaning</h3>
+            <h3>On the following gestures the model is trained-</h3>
+            <h2>
+                <span>&#9996;</span>|
+                <span>&#128076;</span>|
+                <span> &#128079;</span>
+            </h2>
+
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <label style="background-color: white; color:blue; border-radius:10px; padding:6px">Webcam View-</label>
+
+                <div id="camera"></div>
+                <button id="Image_capture" class="btn btn-danger btn-lg" style="margin-top: 10px;"
+                    onclick="Sanpshot_img()">Capture Image</button>
+
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <label style="background-color: white; color:blue; border-radius:10px; padding:6px">Prediction -
+                </label><p id="emoji_name"></p>
+                <h2 id="Hand_emoji"></h2>
+                <h2 id="emoji_confidence"></h2>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <label style="background-color: white; color:blue; border-radius:10px; padding:6px">Snapshot - </label>
+
+                <div id="Snapshot"></div>
+                <button id="Emotion_btn" onclick="Check()" class="btn btn-danger btn-lg" style="margin-top: 10px;">Predict
+                    Emotion</button>
+
+            </div>
+
+        </center>
+
+
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
